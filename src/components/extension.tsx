@@ -3,10 +3,9 @@ import Image from "next/image"
 import { Navbar } from "./navbar"
 import { LucideSquareArrowOutUpRight } from "lucide-react"
 
-export function HeroSection() {
+export function Extension() {
   return (
     <section className="bg-primary relative text-primary-foreground py-7 flex flex-col gap-10 items-center justify-center ">
-        <Navbar />
       <Image src="/images/shape2.png" width={400} height={600} alt="shape" className="absolute w-screen object-cover left-0 "/>
 
       <div className="w-full max-w-[1250px] py-40 flex flex-col lg:flex-row gap-10 justify-center items-center ">

@@ -1,14 +1,17 @@
 import { Check } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from 'next/image';
 
 export default function PricingPlans() {
   return (
     <div className="px-4 py-12 md:py-24 max-w-6xl mx-auto">
-      <div className="text-center space-y-4 mb-12">
+      <div className="flex flex-col text-center space-y-0 mb-12 justify-center">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Choose Your Plan
         </h1>
+      <Image src="/images/shape6.png" width={200} height={20} alt="shape" className="self-center"/>
+
         <p className="text-muted-foreground max-w-3xl mx-auto">
           Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
         </p>

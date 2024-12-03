@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export function WorkEverywhere() {
   return (
-    <section className="py-16 bg-primary text-primary-foreground flex flex-col gap-10 items-center justify-center">
-      
+    <section className="relative py-16 bg-primary overflow-clip text-primary-foreground flex flex-col gap-10 items-center justify-center">
+      <Image src="/images/shape1.png" width={400} height={600} alt="shape" className="absolute left-0 opacity-25"/>
       <div className="w-full max-w-[1250px] py-28 flex flex-col gap-6 justify-center items-center ">
           <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
           Your work, everywhere you are

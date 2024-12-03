@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { Card, CardContent } from "./ui/card"
+import { cn } from "@/lib/utils"
 
 export function Testimonials() {
   const testimonials = [
@@ -46,11 +47,12 @@ export function Testimonials() {
                   : 'bg-white'
               }`}
             >
-              <CardContent className="p-6 space-y-2">
-                <div className="flex gap-1">
+              <CardContent className="p-6 space-y-6">
+                <div className="flex gap-2">
                   
-                  <Image src={"/images/quote.svg"} className="text-blue-500" alt="quote" width={40} height={40} />
-                  <Image src={"/images/quote.svg"} alt="quote" width={40} height={40} />
+                  <Image src={"/images/quote.svg"} className={cn("text-blue-500 ", testimonial.id !== 1 && "invert")} alt="quote" width={40} height={40} />
+                  <Image src={"/images/quote.svg"} className={cn("text-blue-500 ", testimonial.id !== 1 && "invert")} alt="quote" width={40} height={40} />
+                  {/* <Image src={"/images/quote.svg"} alt="quote" width={40} height={40} /> */}
                 </div>
                   <blockquote className="mb-6">
                   <p className="text-sm">{testimonial.text}</p>
@@ -63,8 +65,8 @@ export function Testimonials() {
                     height={48}
                     className="rounded-full"
                   />
-                  <div>
-                    <div className={`font-medium pt-10 ${
+                  <div className="flex flex-col gap-1">
+                    <div className={`font-medium ${
                       testimonial.variant === 'blue' 
                         ? 'text-white' 
                         : 'text-gray-900'

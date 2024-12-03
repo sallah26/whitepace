@@ -6,7 +6,7 @@ export function FullyFun() {
   return (
     <section className="py-16 bg-background text-foreground flex flex-col gap-10 items-center justify-center">
       
-      <div className="w-full max-w-[1250px] py-28 flex flex-col lg:flex-row gap-10 justify-center items-center ">
+      <div className="w-full max-w-[1250px] py-28 flex flex-col lg:flex-row gap-6 justify-center items-center ">
         <div className="space-y-6 w-full lg:w-1/2">
           <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
           100% your data
@@ -19,8 +19,8 @@ export function FullyFun() {
           <ArrowRight />
           </Button>
         </div>
-        <div className="relative w-full h-full lg:w-1/2 bg-red-500">
-          lorem
+        <div className="relative w-full h-full lg:w-1/2 flex justify-center ">
+          <Image src="/images/work.png"  width={700} height={700} alt="shape" className="w-full  h-full"/>
         </div>
       </div>
       

@@ -9,6 +9,8 @@ import { FullyFun } from "@/components/100%"
 import { Sponsors } from "@/components/sponsors"
 import { Favorite } from "@/components/favourite"
 import { Testimonials } from "@/components/testimonials"
+import Footer from "@/components/footer"
+import { Extension } from "@/components/extension"
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
         <HeroSection /> 
         <ProjectManagement />
         <WorkTogether />
+        <Extension />
         <CustomizeNeeds />
         <PricingPlans />
         <WorkEverywhere />
@@ -23,6 +26,7 @@ export default function Home() {
         <Sponsors />
         <Favorite />
         <Testimonials />
+        <Footer />
       </main>
   )
 }
