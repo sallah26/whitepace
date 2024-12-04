@@ -12,10 +12,10 @@ export function FullyFun() {
           100% your data
           </h1>
           <p className="text-md md:text-lg max-w-xl">
-          The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+          The app is open source and your notes are saved to an open format, so you will always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
           </p>
           <Button className="bg-secondary  hover:bg-secondary/90 px-5 flex gap-3">
-          Let’s Go
+          Lets Go
           <ArrowRight />
           </Button>
         </div>

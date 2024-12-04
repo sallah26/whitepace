@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { Navbar } from "./navbar"
 import { LucideSquareArrowOutUpRight } from "lucide-react"
 
 export function Favorite() {

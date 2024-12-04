@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { Card, CardContent } from "./ui/card"
 import { cn } from "@/lib/utils"

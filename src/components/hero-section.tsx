@@ -2,15 +2,8 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Navbar } from "./navbar"
 import { LucideSquareArrowOutUpRight } from "lucide-react"
-
-import { Roboto } from 'next/font/google'
 import { cn } from "@/lib/utils"
  
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-})
  
 
 export function HeroSection() {
