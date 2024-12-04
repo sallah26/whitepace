@@ -6,18 +6,18 @@ import Image from 'next/image';
 export default function PricingPlans() {
   return (
     <div className="py-10 max-w-6xl mx-auto">
-      <div className="flex flex-col text-center space-y-0 mb-4 justify-center">
+      <div className="flex p-4 flex-col text-center space-y-0 mb-4 justify-center">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Choose Your Plan
         </h1>
       <Image src="/images/shape6.png" width={200} height={20} alt="shape" className="self-center"/>
 
-        <p className="text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-muted-foreground max-w-3xl  text-left">
           Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 items-center gap-8">
+      <div className="grid md:grid-cols-3 items-center gap-4 md:gap-8 p-2">
         {/* Free Plan */}
         <Card className="border-2 h-fit">
           <CardHeader>

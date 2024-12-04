@@ -14,7 +14,7 @@ import { Extension } from "@/components/extension"
 
 export default function Home() {
   return (
-      <main className="min-h-screen min-w-screen bg-background items-center justify-center">
+      <main className="min-h-screen min-w-screen bg-background  items-center justify-center">
         <HeroSection /> 
         <ProjectManagement />
         <WorkTogether />

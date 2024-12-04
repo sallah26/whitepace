@@ -3,21 +3,30 @@ import Image from "next/image"
 import { Navbar } from "./navbar"
 import { LucideSquareArrowOutUpRight } from "lucide-react"
 
+import { Roboto } from 'next/font/google'
+import { cn } from "@/lib/utils"
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
+
 export function HeroSection() {
   return (
-    <section className="bg-primary relative text-primary-foreground py-7 flex flex-col gap-10 items-center justify-center ">
+    <section className={cn( " bg-primary p-4 relative text-primary-foreground py-4 md:py-7 flex flex-col gap-20 md:gap-10 items-center justify-center ")}>
         <Navbar />
-      <Image src="/images/shape2.png" width={400} height={600} alt="shape" className="absolute w-screen object-cover left-0 "/>
-
-      <div className="w-full max-w-[1250px] py-1 flex flex-col lg:flex-row gap-10 justify-center items-center ">
-        <div className="space-y-6 w-full lg:w-1/2">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
+      <Image src="/images/shape2.png" width={400} height={600} alt="shape" className="absolute w-screen object-none md:object-cover left-0 "/>
+      <div className="w-full font-serif max-w-[1250px] py-1 flex flex-col lg:flex-row md:gap-10 justify-center items-center ">
+        <div className="space-y-4 w-full lg:w-1/2">
+          <h1 className="text-5xl lg:text-7xl font-extrabold text-white">
             Get More Done with whitepace
           </h1>
-          <p className="text-lg text-white/80 max-w-xl font-medium">
+          <p className="text-md md:text-lg text-white/80 max-w-xl font-medium">
             Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
           </p>
-          <Button className="bg-secondary font-semibold hover:bg-secondary/90 px-5 flex gap-3">
+          <Button className=" bg-secondary font-semibold hover:bg-secondary/90 px-5 flex gap-3">
             Try Whitepace free
             <LucideSquareArrowOutUpRight    />
           

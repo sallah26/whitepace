@@ -32,8 +32,8 @@ export function Testimonials() {
     }
   ]
   return (
-    <section className=" bg-background text-foreground flex flex-col gap-10 items-center justify-center">
-      <div className="w-full max-w-[1250px] py-20 flex flex-col  gap-10 justify-center items-center ">
+    <section className=" bg-background p-4 text-foreground flex flex-col gap-10 items-center justify-center">
+      <div className="w-full max-w-[1250px] py-10 md:py-20 flex flex-col  gap-10 justify-center items-center ">
           <h1 className="relative text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
             what our clients Say
       <Image src="/images/shape3.png" width={400} height={60} alt="shape" className="absolute right-0 "/>
@@ -43,7 +43,7 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
-              className={`py-6 ${
+              className={`py-2 md:py-6 ${
                 testimonial.variant === 'blue' 
                   ? 'bg-blue-500 text-white' 
                   : 'bg-white'

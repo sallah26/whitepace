@@ -4,13 +4,13 @@ import Image from "next/image"
 
 export function Sponsors() {
   return (
-    <section className=" bg-background text-foreground flex flex-col py-16 gap-10 items-center justify-center">
+    <section className=" bg-background p-4 text-foreground flex flex-col py-10 md:py-16 gap-10 items-center justify-center">
       
       <div className="w-full max-w-[1250px] pb-4 flex flex-col  gap-5 justify-center items-center ">
           <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
           Our sponsors
           </h1>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center w-full max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6 items-center justify-center w-full max-w-5xl">
             <div className="flex items-center justify-center p-4">
               <Image
                 src="/images/apple-logo.svg"

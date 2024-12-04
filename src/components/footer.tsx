@@ -5,21 +5,20 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#003B7B] text-white flex flex-col gap-6 pt-10 items-center justify-center">
-       <div className="max-w-3xl mx-auto space-y-6 py-6 flex flex-col justify-center">
-        <h1 className="text-4xl text-center md:text-6xl font-bold tracking-tight">
+    <footer className="bg-[#003B7B] p-4 text-white flex flex-col gap-6 pt-10 items-center justify-center">
+       <div className="max-w-3xl mx-auto space-y-3 md:space-y-6 py-6  flex flex-col md:justify-center">
+        <h1 className="text-4xl text-center md:text-5xl font-bold tracking-tight">
           Try Whitepace today
         </h1>
-        <div className="space-y-2 text-center justify-center">
-          <p className="text-xl md:text-2xl">
+        <div className="space-y-2 ">
+          <p className="text-md md:text-lg ">
             Get started for free.
-          </p>
-          <p className="text-xl md:text-2xl">
             Add your whole team as your needs grow.
           </p>
+        
         </div>
         
-        <div className="space-y-4 text-center">
+        <div className="space-y-4 md:text-center ">
           <Button 
             size="lg"
             className="bg-[#4B9EFF] hover:bg-[#3B8EEF] text-white px-8 py-6 text-lg rounded-md"
@@ -59,8 +58,8 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+      <div className="container mx-auto md:px-4 py-6 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-3">
             <div className="flex items-center gap-2 mb-4">
