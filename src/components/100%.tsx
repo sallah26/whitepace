@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export function FullyFun() {
   return (
-    <section className="py-16 bg-background text-foreground flex flex-col gap-10 items-center justify-center">
+    <section className="pb-10 bg-background text-foreground flex flex-col gap-10 items-center justify-center">
       
       <div className="w-full max-w-[1250px] py-28 flex flex-col lg:flex-row gap-6 justify-center items-center ">
-        <div className="space-y-6 w-full lg:w-1/2">
+        <div className="space-y-3 w-full lg:w-1/2">
           <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
           100% your data
           </h1>

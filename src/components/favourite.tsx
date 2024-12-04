@@ -11,7 +11,7 @@ export function Favorite() {
       <div className="relative w-full h-full lg:w-1/2 flex justify-center ">
           <Image src="/images/Apps.png"  width={700} height={700} alt="shape" className="w-[90%]  h-full"/>
         </div>
-        <div className="space-y-6 w-full lg:w-1/2">
+        <div className="space-y-4 w-full lg:w-1/2">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white">
           Work with Your Favorite Apps Using whitepace
           </h1>

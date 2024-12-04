@@ -5,7 +5,60 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#003B7B] text-white">
+    <footer className="bg-[#003B7B] text-white flex flex-col gap-6 pt-10 items-center justify-center">
+       <div className="max-w-3xl mx-auto space-y-6 py-6 flex flex-col justify-center">
+        <h1 className="text-4xl text-center md:text-6xl font-bold tracking-tight">
+          Try Whitepace today
+        </h1>
+        <div className="space-y-2 text-center justify-center">
+          <p className="text-xl md:text-2xl">
+            Get started for free.
+          </p>
+          <p className="text-xl md:text-2xl">
+            Add your whole team as your needs grow.
+          </p>
+        </div>
+        
+        <div className="space-y-4 text-center">
+          <Button 
+            size="lg"
+            className="bg-[#4B9EFF] hover:bg-[#3B8EEF] text-white px-8 py-6 text-lg rounded-md"
+          >
+            Try Taskey free
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          
+          <div>
+            <p className="text-lg mt-4">
+              On a big team?{" "}
+              <a 
+                href="#contact-sales" 
+                className="text-[#4B9EFF] hover:underline"
+              >
+                Contact sales
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center gap-8 pt-8">
+          <img
+            src="/images/apple.png"
+            alt="Apple"
+            className="h-10 w-10"
+          />
+          <img
+            src="/images/windows-logo.png"
+            alt="Windows"
+            className="h-10 w-10"
+          />
+          <img
+            src="/images/android-logo.png"
+            alt="Android"
+            className="h-10 w-10"
+          />
+        </div>
+      </div>
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Logo and Description */}

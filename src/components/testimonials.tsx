@@ -16,7 +16,7 @@ export function Testimonials() {
     },
     {
       id: 2,
-      text: "Whitepate is designed as a collaboration tool for businesses that is a full project management solution. tool for businesses that is a full project management solution.",
+      text: "whitepate team is a collaboration tool for businesses that is a full project management solution. tool for businesses that is a full project management solution.",
       author: "Oberon Shaw, MCH",
       role: "Head of Talent Acquisition, North America",
       image: "/images/avater2.jpeg",
@@ -24,7 +24,7 @@ export function Testimonials() {
     },
     {
       id: 3,  
-      text: "Whitepate is designed as a collaboration tool for businesses that is a full project management solution. tool for businesses that is a full project management solution.",
+      text: "i found the team is a collaboration tool for businesses that is a full project management solution. which cool and easy to use.",
       author: "Oberon Shaw, MCH",
       role: "Head of Talent Acquisition, North America", 
       image: "/images/avater3.jpeg",
@@ -33,15 +33,17 @@ export function Testimonials() {
   ]
   return (
     <section className=" bg-background text-foreground flex flex-col gap-10 items-center justify-center">
-      <div className="w-full max-w-[1250px] py-16 flex flex-col  gap-10 justify-center items-center ">
-          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
-          See what our trusted users Say
+      <div className="w-full max-w-[1250px] py-20 flex flex-col  gap-10 justify-center items-center ">
+          <h1 className="relative text-4xl sm:text-4xl lg:text-5xl font-extrabold ">
+            what our clients Say
+      <Image src="/images/shape3.png" width={400} height={60} alt="shape" className="absolute right-0 "/>
+
           </h1>
           <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
-              className={`${
+              className={`py-6 ${
                 testimonial.variant === 'blue' 
                   ? 'bg-blue-500 text-white' 
                   : 'bg-white'
@@ -55,7 +57,7 @@ export function Testimonials() {
                   {/* <Image src={"/images/quote.svg"} alt="quote" width={40} height={40} /> */}
                 </div>
                   <blockquote className="mb-6">
-                  <p className="text-sm">{testimonial.text}</p>
+                  <p className="text-md">{testimonial.text}</p>
                 </blockquote>
                 <div className="flex items-center gap-3">
                   <Image

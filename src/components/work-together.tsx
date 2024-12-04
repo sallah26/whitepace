@@ -6,9 +6,9 @@ export function WorkTogether() {
   return (
     <section className="py-10 bg-background text-foreground flex flex-col gap-10 items-center justify-center">
       
-      <div className="w-full max-w-[1250px] py-28 flex flex-col lg:flex-row gap-10 justify-center items-center ">
+      <div className="w-full max-w-[1250px] py-0 flex flex-col lg:flex-row gap-4 justify-center items-center ">
       <div className="relative w-full h-full lg:w-1/2 flex justify-center ">
-          <Image src="/images/peoples.png"  width={700} height={700} alt="shape" className="w-[70%]  h-full"/>
+          <Image src="/images/peoples.png"  width={700} height={700} alt="shape" className="w-[80%]  h-full"/>
         </div>
         <div className="space-y-0 w-full lg:w-1/2">
           <h1 className="relative text-4xl sm:text-4xl lg:text-5xl font-extrabold ">

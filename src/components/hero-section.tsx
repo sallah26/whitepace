@@ -9,7 +9,7 @@ export function HeroSection() {
         <Navbar />
       <Image src="/images/shape2.png" width={400} height={600} alt="shape" className="absolute w-screen object-cover left-0 "/>
 
-      <div className="w-full max-w-[1250px] py-40 flex flex-col lg:flex-row gap-10 justify-center items-center ">
+      <div className="w-full max-w-[1250px] py-1 flex flex-col lg:flex-row gap-10 justify-center items-center ">
         <div className="space-y-6 w-full lg:w-1/2">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
             Get More Done with whitepace
@@ -23,8 +23,8 @@ export function HeroSection() {
           
           </Button>
         </div>
-        <div className="relative w-full h-full lg:w-1/2 bg-red-500">
-          lorem
+        <div className="relative w-full h-full lg:w-1/2 flex justify-center ">
+          <Image src="/images/team.png"  width={700} height={700} alt="shape" className="w-full  h-full"/>
         </div>
       </div>
     </section>

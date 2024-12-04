@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export default function PricingPlans() {
   return (
-    <div className="px-4 py-12 md:py-24 max-w-6xl mx-auto">
-      <div className="flex flex-col text-center space-y-0 mb-12 justify-center">
+    <div className="py-10 max-w-6xl mx-auto">
+      <div className="flex flex-col text-center space-y-0 mb-4 justify-center">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Choose Your Plan
         </h1>
@@ -58,6 +58,7 @@ export default function PricingPlans() {
               <Feature light>Sync unlimited devices</Feature>
               <Feature light>10 GB monthly uploads</Feature>
               <Feature light>200 MB max. note size</Feature>
+              <Feature light>Customize Home dashboard and access extra widgets</Feature>
               <Feature light>Customize Home dashboard and access extra widgets</Feature>
               <Feature light>Connect primary Google Calendar account</Feature>
               <Feature light>Add due dates, reminders, and notifications to your tasks</Feature>
